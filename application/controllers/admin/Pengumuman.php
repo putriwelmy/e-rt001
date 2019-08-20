@@ -41,8 +41,8 @@ class Pengumuman extends Super
             
             /** Ubah Nama yang akan ditampilkan**/
             // $this->crud->display_as('nama','Nama Setelah di Edit')
-            $this->crud->display_as('tgl_posting','Tanggal posting'); 
-			 $this->crud->display_as('no_surat','Nomor surat'); 
+            $this->crud->display_as('tgl_posting','Tanggal Posting'); 
+			 $this->crud->display_as('no_surat','Nomor Surat'); 
             
             /** Akhir Bagian GROCERY CRUD Edit Oleh User**/
             $data = array_merge($data,$this->generateBreadcumbs());

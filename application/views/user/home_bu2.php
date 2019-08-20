@@ -108,7 +108,7 @@
   <!-- Services Section -->
   <section class="page-section" id="kk">
     <div class="container">
-      <h2 class="text-center mt-0">Data Keluarga Rt 001 Rw 002</h2>
+      <h2 class="text-center mt-0">Data Keluarga RT 001 RW 002</h2>
       <hr class="divider my-4">
       <div class="row">
         
@@ -118,7 +118,8 @@
 				<th>No.KK</th>
 				<th>Nama Kepala Keluarga</th>
 				<th>Alamat</th>
-				<th>RT/RW</th>
+				<th>RT</th>
+        <th>RW</th>
 				<th>Kode Pos</th>
 				<th>Kelurahan</th>
 				<th>Kecamatan</th>
@@ -135,7 +136,8 @@
 							<td><?php echo $row->no_kk;?></td>
 							<td><?php echo $row->kepala_keluarga;?></td>
 							<td><?php echo $row->alamat;?></td>
-							<td><?php echo $row->rt_rw;?></td>
+							<td><?php echo $row->rt;?></td>
+              <td><?php echo $row->rw;?></td>
 							<td><?php echo $row->kode_pos;?></td>
 							<td><?php echo $row->kelurahan;?></td>
 							<td><?php echo $row->kecamatan;?></td>

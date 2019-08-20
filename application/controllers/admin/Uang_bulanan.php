@@ -42,6 +42,7 @@ class Uang_bulanan extends Super
             /** Ubah Nama yang akan ditampilkan**/
             // $this->crud->display_as('nama','Nama Setelah di Edit')
                 $this->crud->display_as('id_kk','No KK'); 
+                $this->crud->display_as('nama_bulan','Nama Bulan'); 
             
             /** Akhir Bagian GROCERY CRUD Edit Oleh User**/
             $data = array_merge($data,$this->generateBreadcumbs());

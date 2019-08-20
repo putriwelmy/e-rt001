@@ -134,7 +134,7 @@
   <!-- Services Section -->
   <section class="page-section" id="kk" style="border: thin solid">
     <div class="container">
-      <h2 class="text-center mt-0">Data Keluarga Rt 001 Rw 002</h2>
+      <h2 class="text-center mt-0">Data Keluarga RT 001 RW 002</h2>
       <hr class="divider my-4">
       <!-- <div class="row">
         
@@ -147,7 +147,8 @@
             <th>No.KK</th>
             <th>Nama Kepala Keluarga</th>
             <th>Alamat</th>
-            <th>RT/RW</th>
+            <th>RT</th>
+            <th>RW</th>
             <th>Kode Pos</th>
             <th>Kelurahan</th>
             <th>Kecamatan</th>
@@ -165,7 +166,8 @@
                   <td><?php echo $row->no_kk;?></td>
                   <td><?php echo $row->kepala_keluarga;?></td>
                   <td><?php echo $row->alamat;?></td>
-                  <td><?php echo $row->rt_rw;?></td>
+                  <td><?php echo $row->rt;?></td>
+                  <td><?php echo $row->rw;?></td>
                   <td><?php echo $row->kode_pos;?></td>
                   <td><?php echo $row->kelurahan;?></td>
                   <td><?php echo $row->kecamatan;?></td>
@@ -228,7 +230,40 @@
           <hr class="divider my-4">
           <p class="text-muted mb-5"></div>
       </div>
-      <div class="row">
+      <!-- <div class="page-content-inner"> -->
+    <div class="row">
+        <div class="col-md-12 container-costume border1 text-center"> 
+        <!--SLIDER-->
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="<?php echo base_url('pictures/kerja.jpg')?>" style="width: 50%;" alt="">
+            <div class="carousel-caption">
+              ...
+            </div>
+          </div>
+          <div class="item">
+            <img src="<?php echo base_url('pictures/kerja2.jpg')?>" style="width: 50%;" alt="">
+            <div class="carousel-caption">
+              ...
+            </div>
+          </div>
+         <!-- <div class="item">
+            <img src="<?php echo base_url('assets/user/bahan/slide3.jpg')?>" style="width: 50%;" alt="">
+            <div class="carousel-caption">
+              ...
+            </div> -->
+          </div>
+        </div>
+    <!--  <div class="row">
         <table class="table table-bordered">
           <thead>
             <th>No</th>
@@ -247,7 +282,7 @@
           <?php $no++; } ?>
          </table>
       </div>
-    </div>
+    </div> -->
   </section>
 
   <!-- kontak -->

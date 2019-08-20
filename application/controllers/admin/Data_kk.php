@@ -43,6 +43,12 @@ class Data_kk extends Super
             // $this->crud->display_as('nama','Nama Setelah di Edit')
              $this->crud->display_as('no_kk','No KK');
              $this->crud->display_as('kabupaten','Kabupaten/Kota'); 
+             $this->crud->display_as('kepala_keluarga','Kepala Keluarga');
+             $this->crud->display_as('rt','RT');
+             $this->crud->display_as('rw','RW');
+             $this->crud->display_as('kode_pos','Kode Pos');
+             
+
             
             /** Akhir Bagian GROCERY CRUD Edit Oleh User**/
             $data = array_merge($data,$this->generateBreadcumbs());

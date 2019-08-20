@@ -43,7 +43,10 @@ class Detail_keuangan extends Super
             // $this->crud->display_as('nama','Nama Setelah di Edit')
             $this->crud->display_as('id_bulan','Nama Bulan'); 
 			$this->crud->display_as('jenis_keuangan','Jenis Kegiatan'); 
+            $this->crud->display_as('detail_keuangan','Detail Kuangan'); 
+            $this->crud->display_as('nominal_keuangan','Nominal Keuangan'); 
             
+
             /** Akhir Bagian GROCERY CRUD Edit Oleh User**/
             $data = array_merge($data,$this->generateBreadcumbs());
             $data = array_merge($data,$this->generateData());
