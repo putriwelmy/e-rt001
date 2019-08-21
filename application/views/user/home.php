@@ -40,6 +40,9 @@
 }
 
 .w-100{width:100%!important; height:250px !important;}
+.text-muted {
+    color: #fff!important;
+}
 </style>
 
 </head>
@@ -92,29 +95,29 @@
         } ?>
       <marquee><?php echo $str; ?></marquee>
      <!--  <table class="table table-bordered text-white-50">
-				<tr>
-					<th>no</th>
-					<th>perihal</th>
-					<th>nomor surat</th>
-					<th>tanggal</th>
-					<th>aksi</th>
-				</tr>
-				<?php
-				//$i=1;
-				//foreach($pengumuman as $peng) {?>
-				<tr>
-					<td><?php //echo $i; ?></td>
-					<td><?php //echo $peng->judul; ?></td>
-					<td><?php //echo $peng->no_surat; ?></td>
-					<td><?php //echo $peng->tgl_posting; ?></td>
-					<td><a href='#' onclick="detailPengumuman('<?php //echo $peng->id_pengumuman; ?>')">detail</a></td>
-				</tr>
-				<?php //$i++; } ?>
-			</table> -->
+        <tr>
+          <th>no</th>
+          <th>perihal</th>
+          <th>nomor surat</th>
+          <th>tanggal</th>
+          <th>aksi</th>
+        </tr>
+        <?php
+        //$i=1;
+        //foreach($pengumuman as $peng) {?>
+        <tr>
+          <td><?php //echo $i; ?></td>
+          <td><?php //echo $peng->judul; ?></td>
+          <td><?php //echo $peng->no_surat; ?></td>
+          <td><?php //echo $peng->tgl_posting; ?></td>
+          <td><a href='#' onclick="detailPengumuman('<?php //echo $peng->id_pengumuman; ?>')">detail</a></td>
+        </tr>
+        <?php //$i++; } ?>
+      </table> -->
         </div>
-		<div class="col-lg-10">
-			
-		</div>
+    <div class="col-lg-10">
+      
+    </div>
       </div>
     </div>
   </header>
@@ -190,26 +193,26 @@
           <h2 class="text-white mt-0">Informasi Keuangan</h2>
           <hr class="divider light my-4">
           <p class="text-white-50 mb-4">
-		   <table class="table table-bordered">
-			<thead>
-				<td>No</td>
-				<td>Bulan</td>
-				<td>Tahun</td>
-			</thead>
-			<tbody>
-					<?php 
-					$no = 1;
-					foreach($keuangan as $row) {			
-					?>
-						<tr>
-							<td><?php echo $no;?></td>
-							<td><a href="#" style="color:white;" onclick="detail_keuangan('<?php echo $row->id_bulan; ?>')"><?php echo $row->nama_bulan;?></a></td>
-							<td><?php echo $row->tahun;?></td>
-						</tr>
-				<?php $no++; } ?>		
-			</tbody>
-		</table>
-		  
+       <table class="table table-bordered">
+      <thead>
+        <td>No</td>
+        <td>Bulan</td>
+        <td>Tahun</td>
+      </thead>
+      <tbody>
+          <?php 
+          $no = 1;
+          foreach($keuangan as $row) {      
+          ?>
+            <tr>
+              <td><?php echo $no;?></td>
+              <td><a href="#" style="color:white;" onclick="detail_keuangan('<?php echo $row->id_bulan; ?>')"><?php echo $row->nama_bulan;?></a></td>
+              <td><?php echo $row->tahun;?></td>
+            </tr>
+        <?php $no++; } ?>   
+      </tbody>
+    </table>
+      
         </div>
       </div>
     </div>
@@ -322,9 +325,9 @@
 <script type="text/javascript" src="<?php echo base_url("assets/user")?>/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
   
   <script type="text/javascript">
-	function detailPengumuman(id){
-		//alert(id);
-		$.fancybox.open({
+  function detailPengumuman(id){
+    //alert(id);
+    $.fancybox.open({
          href : "Detail_pengumuman/index/"+id,
          type : 'iframe',
          helpers : {
@@ -334,14 +337,14 @@
          height: 800,
          autoSize: false,
          scrolling: false
-		});
-		
-	}
-	
-	function detail_kartu(id_kk){
-		
-		//alert(id);
-		$.fancybox.open({
+    });
+    
+  }
+  
+  function detail_kartu(id_kk){
+    
+    //alert(id);
+    $.fancybox.open({
          href : "Detail_kartu/index/"+id_kk,
          type : 'iframe',
          helpers : {
@@ -351,13 +354,13 @@
          height: 800,
          autoSize: false,
          scrolling: false
-		});
-	}
-	
-	function detail_keuangan(id_bulan){
-		
-		//alert(id);
-		$.fancybox.open({
+    });
+  }
+  
+  function detail_keuangan(id_bulan){
+    
+    //alert(id);
+    $.fancybox.open({
          href : "Detail_keuangan/index/"+id_bulan,
          type : 'iframe',
          helpers : {
@@ -367,8 +370,8 @@
          height: 800,
          autoSize: false,
          scrolling: false
-		});
-	}
+    });
+  }
 
   function detail_galeri(id_kategori){
     

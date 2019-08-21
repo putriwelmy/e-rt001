@@ -21,9 +21,12 @@
 		<td><?php echo $detail_kk->kecamatan;?></td>
 	</tr>
 	<tr>
-		<td>RT/RW</td>
+		<td>RT</td>
 		<td>:</td>
-		<td ><?php echo $detail_kk->rt_rw;?></td>
+		<td ><?php echo $detail_kk->rt;?></td>
+		<td>RW</td>
+		<td>:</td>
+		<td ><?php echo $detail_kk->rw;?></td>
 		<td style="padding-left:50px;">Kabupaten</td>
 		<td>:</td>
 		<td><?php echo $detail_kk->kabupaten;?></td>
