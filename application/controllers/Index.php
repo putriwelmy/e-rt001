@@ -18,7 +18,17 @@ class Index extends CI_Controller {
 
 			$data['galeri'] = $this->db->get('kategori_galeri')->result();
 
-		$this -> load -> view ('user/home',$data);
+			$this->db->order_by('id_kategori','random');
+			$this->db->join('kategori_galeri','kategori_galeri.id_kategori=detail_kategori.id_kategori');
+			$data['poto_galeri'] = $this->db->get('detail_kategori')->result();
+
+			$this->db->limit('1');
+			$this->db->order_by('id_detail','ASC');
+			$data['poto_aktif'] = $this->db->get('detail_kategori')->row();
+
+			// var_dump($data['poto_aktif']); die();
+
+		$this->load->view ('user/home',$data);
 		
 	}
 	
